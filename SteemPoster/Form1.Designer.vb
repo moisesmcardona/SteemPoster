@@ -64,7 +64,7 @@ Partial Class Form1
         Me.PK.Name = "PK"
         Me.PK.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.PK.Size = New System.Drawing.Size(462, 20)
-        Me.PK.TabIndex = 3
+        Me.PK.TabIndex = 2
         '
         'Label2
         '
@@ -92,7 +92,7 @@ Partial Class Form1
         Me.Title.Location = New System.Drawing.Point(15, 64)
         Me.Title.Name = "Title"
         Me.Title.Size = New System.Drawing.Size(900, 20)
-        Me.Title.TabIndex = 5
+        Me.Title.TabIndex = 3
         '
         'Tags
         '
@@ -101,7 +101,7 @@ Partial Class Form1
         Me.Tags.Location = New System.Drawing.Point(15, 555)
         Me.Tags.Name = "Tags"
         Me.Tags.Size = New System.Drawing.Size(428, 20)
-        Me.Tags.TabIndex = 7
+        Me.Tags.TabIndex = 5
         Me.Tags.Text = "tag1,tag2,tag3,tag4,tag5"
         '
         'Label4
@@ -120,7 +120,7 @@ Partial Class Form1
         Me.Permalink.Location = New System.Drawing.Point(453, 555)
         Me.Permalink.Name = "Permalink"
         Me.Permalink.Size = New System.Drawing.Size(462, 20)
-        Me.Permalink.TabIndex = 9
+        Me.Permalink.TabIndex = 6
         Me.Permalink.Text = "link-to-the-post"
         '
         'Label5
@@ -150,7 +150,7 @@ Partial Class Form1
         Me.Body.Location = New System.Drawing.Point(15, 103)
         Me.Body.Name = "Body"
         Me.Body.Size = New System.Drawing.Size(900, 432)
-        Me.Body.TabIndex = 11
+        Me.Body.TabIndex = 4
         Me.Body.Text = ""
         '
         'Button1
@@ -160,12 +160,13 @@ Partial Class Form1
         Me.Button1.Location = New System.Drawing.Point(15, 582)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(904, 31)
-        Me.Button1.TabIndex = 12
+        Me.Button1.TabIndex = 7
         Me.Button1.Text = "Preview"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label7
         '
+        Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(15, 616)
         Me.Label7.Name = "Label7"
@@ -175,11 +176,12 @@ Partial Class Form1
         '
         'Remember
         '
+        Me.Remember.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Remember.AutoSize = True
         Me.Remember.Location = New System.Drawing.Point(453, 616)
         Me.Remember.Name = "Remember"
         Me.Remember.Size = New System.Drawing.Size(200, 17)
-        Me.Remember.TabIndex = 14
+        Me.Remember.TabIndex = 8
         Me.Remember.Text = "Remember Account and Posting Key"
         Me.Remember.UseVisualStyleBackColor = True
         '
