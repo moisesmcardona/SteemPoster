@@ -5,7 +5,7 @@ Imports System.Text
 Public Class Preview
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Try
-            Dim request As System.Net.WebRequest = System.Net.WebRequest.Create("https://moisescardona.me/steem/postToSteem/")
+            Dim request As System.Net.WebRequest = System.Net.WebRequest.Create("https://api.steem.place/postToSteem/")
             request.Method = "POST"
             Dim postData As String = "title=" + Form1.Title.Text + "&body=" + Form1.Body.Text + "&author=" + Form1.AccountName.Text + "&permlink=" + Form1.Permalink.Text + "&tags=" + Form1.Tags.Text + "&pk=" + Form1.PK.Text
             Dim byteArray As Byte() = Encoding.UTF8.GetBytes(postData)

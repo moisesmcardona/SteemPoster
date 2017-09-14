@@ -35,7 +35,7 @@ Public Class Form1
                 My.Settings.Save()
             End If
             Try
-                Dim request As System.Net.WebRequest = System.Net.WebRequest.Create("https://moisescardona.me/steem/PreviewPost/")
+                Dim request As System.Net.WebRequest = System.Net.WebRequest.Create("https://api.steem.place/PreviewPost/")
                 request.Method = "POST"
                 Dim postData As String = "body=" + Body.Text
                 Dim byteArray As Byte() = Encoding.UTF8.GetBytes(postData)
@@ -80,5 +80,9 @@ Public Class Form1
             My.Settings.PK = String.Empty
             My.Settings.Save()
         End If
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+        Process.Start("https://steemit.com/@moisesmcardona")
     End Sub
 End Class

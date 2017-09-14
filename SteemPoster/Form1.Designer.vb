@@ -168,11 +168,13 @@ Partial Class Form1
         '
         Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.RoyalBlue
         Me.Label7.Location = New System.Drawing.Point(15, 616)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(281, 13)
         Me.Label7.TabIndex = 13
-        Me.Label7.Text = "v1.1 - Developed by Moises Cardona (@moisesmcardona)"
+        Me.Label7.Text = "v1.2 - Developed by Moises Cardona (@moisesmcardona)"
         '
         'Remember
         '
