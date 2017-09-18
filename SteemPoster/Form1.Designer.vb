@@ -174,7 +174,7 @@ Partial Class Form1
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(281, 13)
         Me.Label7.TabIndex = 13
-        Me.Label7.Text = "v1.2 - Developed by Moises Cardona (@moisesmcardona)"
+        Me.Label7.Text = "v1.3 - Developed by Moises Cardona (@moisesmcardona)"
         '
         'Remember
         '

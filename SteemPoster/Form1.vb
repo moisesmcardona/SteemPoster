@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports System.Net
 Imports System.Text
+Imports System.Web
 
 Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -21,7 +22,7 @@ Public Class Form1
         ElseIf String.IsNullOrEmpty(Tags.Text) Then
             ErrorMessage += "-Post Tags" & vbCrLf
             ErrorOcurred = True
-        ElseIf String.IsNullOrEmpty(PermaLink.Text) Then
+        ElseIf String.IsNullOrEmpty(Permalink.Text) Then
             ErrorMessage += "-Post Link" & vbCrLf
             ErrorOcurred = True
         End If
@@ -37,7 +38,7 @@ Public Class Form1
             Try
                 Dim request As System.Net.WebRequest = System.Net.WebRequest.Create("https://api.steem.place/PreviewPost/")
                 request.Method = "POST"
-                Dim postData As String = "body=" + Body.Text
+                Dim postData As String = "body=" + HttpUtility.UrlEncode(Body.Text)
                 Dim byteArray As Byte() = Encoding.UTF8.GetBytes(postData)
                 request.ContentType = "application/x-www-form-urlencoded"
                 request.ContentLength = byteArray.Length
