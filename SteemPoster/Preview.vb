@@ -8,7 +8,7 @@ Public Class Preview
         Try
             Dim request As System.Net.WebRequest = System.Net.WebRequest.Create("https://api.steem.place/postToSteem/")
             request.Method = "POST"
-            Dim postData As String = "title=" + Form1.Title.Text + "&body=" + HttpUtility.UrlEncode(Form1.Body.Text) + "&author=" + Form1.AccountName.Text + "&permlink=" + Form1.Permalink.Text + "&tags=" + Form1.Tags.Text + "&pk=" + Form1.PK.Text
+            Dim postData As String = "title=" + HttpUtility.UrlEncode(Form1.Title.Text) + "&body=" + HttpUtility.UrlEncode(Form1.Body.Text) + "&author=" + Form1.AccountName.Text + "&permlink=" + Form1.Permalink.Text + "&tags=" + Form1.Tags.Text + "&pk=" + Form1.PK.Text
             Dim byteArray As Byte() = Encoding.UTF8.GetBytes(postData)
             request.ContentType = "application/x-www-form-urlencoded"
             request.ContentLength = byteArray.Length
